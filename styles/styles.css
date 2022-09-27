@@ -70,6 +70,7 @@ body {
   background-color: #212832;
   margin: 24px;
   padding: 25px 25px 32px 25px;
+  max-width: 412px;
 }
 .rating__icon-star-container {
   position: relative;
@@ -97,20 +98,23 @@ body {
 }
 .rating__score {
   display: flex;
-  gap: 17px;
+  justify-content: space-between;
   margin-bottom: 25px;
+  gap: 17px;
 }
 .rating__score button {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
   padding: 0;
   color: hsl(216deg, 12%, 54%);
   background-color: #252E37;
   outline: hsl(25deg, 97%, 53%);
   border: none;
   border-radius: 50%;
+  min-width: 42px;
+  max-width: 52px;
   cursor: pointer;
 }
 .rating__score button::before {
@@ -136,4 +140,21 @@ body {
 .rating button[type=submit]:hover {
   color: hsl(25deg, 97%, 53%);
   background-color: hsl(0deg, 0%, 100%);
+}
+
+@media screen and (min-width: 1440px) {
+  .rating {
+    padding: 33px 38px;
+  }
+  .rating__icon-star-container {
+    height: 47px;
+    width: 47px;
+    margin-bottom: 37px;
+  }
+  .rating p {
+    margin-bottom: 32px;
+  }
+  .rating__score {
+    margin-bottom: 32px;
+  }
 }

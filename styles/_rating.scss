@@ -5,6 +5,7 @@
   background-color: variables.$dark-blue;
   margin: 24px;
   padding: 25px 25px 32px 25px;
+  max-width: 412px;
 
   &__icon-star-container {
     position: relative;
@@ -35,20 +36,24 @@
 
   &__score {
     display: flex;
-    gap: 17px;
+    justify-content: space-between;
     margin-bottom: 25px;
+    gap: 17px;
 
     button {
+      flex: 1;
       display: flex;
       justify-content: center;
       align-items: center;
-      flex: 1;
       padding: 0;
       color: variables.$medium-grey;
       background-color: variables.$light-blue;
       outline: variables.$orange;
       border: none;
       border-radius: 50%;
+      min-width: 42px;
+      max-width: 52px;
+      
       cursor: pointer;
 
       // Allow to have a round button with dynamic width.
@@ -79,6 +84,26 @@
     &:hover {
       color: variables.$orange;
       background-color: variables.$white;
+    }
+  }
+}
+
+@media screen and (min-width: variables.$desktop) {
+  .rating {
+    padding: 33px 38px;
+
+    &__icon-star-container {
+      height: 47px;
+      width: 47px;
+      margin-bottom: 37px;
+    }
+
+    p {
+      margin-bottom: 32px;
+    }
+
+    &__score {
+      margin-bottom: 32px;
     }
   }
 }
