@@ -61,7 +61,8 @@ body {
   background-color: hsl(216deg, 12%, 8%);
   min-height: 100vh;
   display: flex;
-  place-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .rating {
