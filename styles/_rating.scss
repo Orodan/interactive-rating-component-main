@@ -4,7 +4,7 @@
   border-radius: 15px;
   background-color: variables.$dark-blue;
   margin: 24px;
-  padding: 25px 25px 32px 25px;
+  padding: 22px 22px 32px 22px;
   max-width: 412px;
 
   &__icon-star-container {
@@ -28,7 +28,7 @@
 
   p {
     color: variables.$light-grey;
-    font-size: variables.$paragraph-font-size;
+    font-size: 14px;
     line-height: 1rem;
     margin-bottom: 25px;
     line-height: 1.3rem;
@@ -100,6 +100,7 @@
 
     p {
       margin-bottom: 32px;
+      font-size: 15px;
     }
 
     &__score {
