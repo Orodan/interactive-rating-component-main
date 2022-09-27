@@ -68,7 +68,7 @@ body {
   border-radius: 5px;
   background-color: #212832;
   margin: 24px;
-  padding: 25px 32px 25px 25px;
+  padding: 25px 25px 32px 25px;
 }
 .rating__icon-star-container {
   position: relative;
@@ -79,4 +79,18 @@ body {
   width: 40px;
   border-radius: 50%;
   background-color: #252E37;
+  margin-bottom: 25px;
+}
+.rating h1 {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.rating p {
+  color: hsl(217deg, 12%, 54%);
+  font-size: 15px;
+  line-height: 1rem;
+  margin-bottom: 25px;
+  line-height: 1.3rem;
 }
