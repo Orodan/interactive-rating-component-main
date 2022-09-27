@@ -1,0 +1,13 @@
+@use 'variables';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Overpass;
+  background-color: variables.$very-dark-blue;
+  min-height: 100vh;
+  display: flex;
+  place-items: center;
+}
