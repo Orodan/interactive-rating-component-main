@@ -18,6 +18,7 @@
     color: variables.$orange;
     background-color: variables.$light-blue;
     margin-bottom: 30px;
+    font-size: 14px;
   }
 
   h1 {
@@ -32,5 +33,27 @@
     text-align: center;
     font-size: 14px;
     line-height: 1.3rem;
+  }
+}
+
+@media screen and (min-width: variables.$desktop) {
+  .thank-you {
+    padding: 40px 38px 50px 38px;
+
+    img {
+      margin-bottom: 30px;
+    }
+  
+    &__result {
+      margin-bottom: 35px;
+    }
+  
+    h1 {
+      font-size: 1.7rem;
+    }
+  
+    p {
+      font-size: 15px;
+    }
   }
 }

@@ -189,6 +189,7 @@ body {
   color: hsl(25deg, 97%, 53%);
   background-color: #252E37;
   margin-bottom: 30px;
+  font-size: 14px;
 }
 .thank-you h1 {
   color: hsl(0deg, 0%, 100%);
@@ -201,4 +202,22 @@ body {
   text-align: center;
   font-size: 14px;
   line-height: 1.3rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .thank-you {
+    padding: 40px 38px 50px 38px;
+  }
+  .thank-you img {
+    margin-bottom: 30px;
+  }
+  .thank-you__result {
+    margin-bottom: 35px;
+  }
+  .thank-you h1 {
+    font-size: 1.7rem;
+  }
+  .thank-you p {
+    font-size: 15px;
+  }
 }
