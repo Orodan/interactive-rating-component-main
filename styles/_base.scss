@@ -12,3 +12,17 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.card {
+  border-radius: 30px;
+  background-color: variables.$dark-blue;
+  margin: 24px;
+  padding: 22px 22px 32px 22px;
+  max-width: 412px;
+}
+
+@media screen and (min-width: variables.$desktop) {
+  .card {
+    padding: 33px 38px;
+  }
+}

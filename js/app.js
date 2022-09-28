@@ -1,3 +1,6 @@
+const ratingCard = document.querySelector('#rating-card')
+const thankYouCard = document.querySelector('#thank-you-card')
+
 /***************************\
  ****** Score buttons ******  
 \***************************/
@@ -13,6 +16,8 @@ function updateScore(event) {
   updateSelectedButton(selectedScore, newSelectedScore)
 
   selectedScore = newSelectedScore
+
+  submitButton.removeAttribute('disabled')
 }
 
 function updateSelectedButton(oldSelectedScore, newSelectedScore) {
@@ -31,6 +36,13 @@ function updateSelectedButton(oldSelectedScore, newSelectedScore) {
  ****** Submit button ******  
 \***************************/
 
-// Deactivate submit button as long as no score is selected
+const submitButton = document.querySelector('#submit-button')
+
 // Add event listener to submit button
+submitButton.addEventListener('click', handleSubmit);
+
+function handleSubmit() {
+  ratingCard.setAttribute('hidden', true)
+  thankYouCard.removeAttribute('hidden')
+}
 // Show the thank you card when it's clicked
