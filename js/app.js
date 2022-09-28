@@ -1,11 +1,17 @@
 const ratingCard = document.querySelector('#rating-card')
 const thankYouCard = document.querySelector('#thank-you-card')
+const ratingSpan = document.querySelector('#rating-span')
 
 /***************************\
  ****** Score buttons ******  
 \***************************/
 
 let selectedScore;
+
+// TODO: remove when finished
+selectedScore = 3;
+ratingSpan.innerHTML = selectedScore
+
 const scoreButtons = document.querySelector('#score-buttons').getElementsByTagName('button')
 for (let button of scoreButtons) {
   button.addEventListener('click', updateScore)
@@ -44,5 +50,7 @@ submitButton.addEventListener('click', handleSubmit);
 function handleSubmit() {
   ratingCard.setAttribute('hidden', true)
   thankYouCard.removeAttribute('hidden')
+
+  ratingSpan.innerHTML = selectedScore
 }
 // Show the thank you card when it's clicked
