@@ -21,6 +21,10 @@ body {
   max-width: 412px;
 }
 
+div.hidden {
+  display: none;
+}
+
 @media screen and (min-width: variables.$desktop) {
   .card {
     padding: 33px 38px;

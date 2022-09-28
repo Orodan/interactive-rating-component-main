@@ -73,6 +73,10 @@ body {
   max-width: 412px;
 }
 
+div.hidden {
+  display: none;
+}
+
 @media screen and (min-width: 1440px) {
   .card {
     padding: 33px 38px;
@@ -126,6 +130,10 @@ body {
   content: "";
   padding-top: 100%;
 }
+.rating__score button:hover {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(25deg, 97%, 53%);
+}
 .rating__score .selected {
   color: hsl(0deg, 0%, 100%);
   background-color: hsl(217deg, 12%, 54%);
@@ -166,10 +174,6 @@ body {
   }
   .rating__score {
     margin-bottom: 32px;
-  }
-  .rating__score button:hover {
-    color: hsl(0deg, 0%, 100%);
-    background-color: hsl(25deg, 97%, 53%);
   }
 }
 .thank-you {

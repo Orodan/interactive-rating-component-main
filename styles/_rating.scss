@@ -54,6 +54,11 @@
         content: '';
         padding-top: 100%; 
       }
+
+      &:hover {
+        color: variables.$white;
+        background-color: variables.$orange;
+      }
     }
 
     .selected {
@@ -105,11 +110,6 @@
 
     &__score {
       margin-bottom: 32px;
-
-      button:hover {
-        color: variables.$white;
-        background-color: variables.$orange;
-      }
     }
   }
 }

@@ -43,8 +43,8 @@ const submitButton = document.querySelector('#submit-button')
 submitButton.addEventListener('click', handleSubmit);
 
 function handleSubmit() {
-  ratingCard.setAttribute('hidden', true)
-  thankYouCard.removeAttribute('hidden')
+  ratingCard.classList.toggle('hidden')
+  thankYouCard.classList.toggle('hidden')
 
   ratingSpan.innerHTML = selectedScore
 }
