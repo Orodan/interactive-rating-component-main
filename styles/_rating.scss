@@ -1,7 +1,7 @@
 @use 'variables';
 
 .rating {
-  border-radius: 15px;
+  border-radius: 30px;
   background-color: variables.$dark-blue;
   margin: 24px;
   padding: 22px 22px 32px 22px;
@@ -21,7 +21,7 @@
 
   h1 {
     color: variables.$white;
-    font-size: variables.$title-font-size;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 25px;
   }
@@ -67,6 +67,11 @@
         background-color: variables.$orange;
       }
     }
+
+    .selected {
+      color: variables.$white;
+      background-color: variables.$light-grey;
+    }
   }
 
   button[type=submit] {
@@ -96,6 +101,10 @@
       height: 47px;
       width: 47px;
       margin-bottom: 37px;
+    }
+
+    h1 {
+      font-size: 1.7rem;
     }
 
     p {
