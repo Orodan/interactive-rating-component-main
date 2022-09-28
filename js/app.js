@@ -8,10 +8,6 @@ const ratingSpan = document.querySelector('#rating-span')
 
 let selectedScore;
 
-// TODO: remove when finished
-selectedScore = 3;
-ratingSpan.innerHTML = selectedScore
-
 const scoreButtons = document.querySelector('#score-buttons').getElementsByTagName('button')
 for (let button of scoreButtons) {
   button.addEventListener('click', updateScore)
@@ -44,7 +40,6 @@ function updateSelectedButton(oldSelectedScore, newSelectedScore) {
 
 const submitButton = document.querySelector('#submit-button')
 
-// Add event listener to submit button
 submitButton.addEventListener('click', handleSubmit);
 
 function handleSubmit() {
@@ -53,4 +48,3 @@ function handleSubmit() {
 
   ratingSpan.innerHTML = selectedScore
 }
-// Show the thank you card when it's clicked
