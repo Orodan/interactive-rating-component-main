@@ -98,9 +98,8 @@ body {
 .rating p {
   color: hsl(217deg, 12%, 54%);
   font-size: 14px;
-  line-height: 1rem;
-  margin-bottom: 25px;
   line-height: 1.3rem;
+  margin-bottom: 25px;
 }
 .rating__score {
   display: flex;
@@ -172,4 +171,34 @@ body {
     color: hsl(0deg, 0%, 100%);
     background-color: hsl(25deg, 97%, 53%);
   }
+}
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 28px 42px 28px;
+}
+.thank-you img {
+  width: 162px;
+  height: 108px;
+  margin-bottom: 22px;
+}
+.thank-you__result {
+  padding: 10px 15px;
+  border-radius: 30px;
+  color: hsl(25deg, 97%, 53%);
+  background-color: #252E37;
+  margin-bottom: 30px;
+}
+.thank-you h1 {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+.thank-you p {
+  color: hsl(217deg, 12%, 54%);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.3rem;
 }
