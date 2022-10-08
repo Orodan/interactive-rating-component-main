@@ -15,21 +15,21 @@
   &__result {
     padding: 10px 15px;
     border-radius: 30px;
-    color: variables.$orange;
-    background-color: variables.$light-blue;
+    color: var(--orange);
+    background-color: var(--light-blue);
     margin-bottom: 30px;
     font-size: 14px;
   }
 
   h1 {
-    color: variables.$white;
+    color: var(--white);
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 22px;
   }
 
   p {
-    color: variables.$light-grey;
+    color: var(--light-grey);
     text-align: center;
     font-size: 14px;
     line-height: 1.3rem;

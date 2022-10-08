@@ -52,13 +52,25 @@ table {
   border-spacing: 0;
 }
 
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 54%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --light-blue: #252E37;
+  --dark-blue: #212832;
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --title-font-size: 1.5rem;
+  --paragraph-font-size: 15px;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 body {
   font-family: Overpass;
-  background-color: hsl(216deg, 12%, 8%);
+  background-color: var(--very-dark-blue);
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -67,7 +79,7 @@ body {
 
 .card {
   border-radius: 30px;
-  background-color: #212832;
+  background-color: var(--dark-blue);
   margin: 24px;
   padding: 22px 22px 32px 22px;
   max-width: 412px;
@@ -90,17 +102,17 @@ div.hidden {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-color: #252E37;
+  background-color: var(--light-blue);
   margin-bottom: 25px;
 }
 .rating h1 {
-  color: hsl(0deg, 0%, 100%);
+  color: var(--white);
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 25px;
 }
 .rating p {
-  color: hsl(217deg, 12%, 54%);
+  color: var(--light-grey);
   font-size: 14px;
   line-height: 1.3rem;
   margin-bottom: 25px;
@@ -117,32 +129,29 @@ div.hidden {
   justify-content: center;
   align-items: center;
   padding: 0;
-  color: hsl(216deg, 12%, 54%);
-  background-color: #252E37;
-  outline: hsl(25deg, 97%, 53%);
+  color: var(--medium-grey);
+  background-color: var(--light-blue);
+  outline: var(--orange);
   border: none;
   border-radius: 50%;
   min-width: 42px;
   max-width: 52px;
+  aspect-ratio: 1/1;
   cursor: pointer;
 }
-.rating__score button::before {
-  content: "";
-  padding-top: 100%;
-}
 .rating__score button:hover {
-  color: hsl(0deg, 0%, 100%);
-  background-color: hsl(25deg, 97%, 53%);
+  color: var(--white);
+  background-color: var(--orange);
 }
 .rating__score .selected {
-  color: hsl(0deg, 0%, 100%);
-  background-color: hsl(217deg, 12%, 54%);
+  color: var(--white);
+  background-color: var(--light-grey);
 }
 .rating button[type=submit] {
   border: none;
   border-radius: 30px;
-  color: hsl(0deg, 0%, 100%);
-  background-color: hsl(25deg, 97%, 53%);
+  color: var(--white);
+  background-color: var(--orange);
   width: 100%;
   height: 45px;
   text-transform: uppercase;
@@ -155,8 +164,8 @@ div.hidden {
   opacity: 1;
 }
 .rating button[type=submit]:not(:disabled):hover {
-  color: hsl(25deg, 97%, 53%);
-  background-color: hsl(0deg, 0%, 100%);
+  color: var(--orange);
+  background-color: var(--white);
 }
 
 @media screen and (min-width: 1440px) {
@@ -190,19 +199,19 @@ div.hidden {
 .thank-you__result {
   padding: 10px 15px;
   border-radius: 30px;
-  color: hsl(25deg, 97%, 53%);
-  background-color: #252E37;
+  color: var(--orange);
+  background-color: var(--light-blue);
   margin-bottom: 30px;
   font-size: 14px;
 }
 .thank-you h1 {
-  color: hsl(0deg, 0%, 100%);
+  color: var(--white);
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 22px;
 }
 .thank-you p {
-  color: hsl(217deg, 12%, 54%);
+  color: var(--light-grey);
   text-align: center;
   font-size: 14px;
   line-height: 1.3rem;

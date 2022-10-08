@@ -9,19 +9,19 @@
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    background-color: variables.$light-blue;
+    background-color: var(--light-blue);
     margin-bottom: 25px;
   }
 
   h1 {
-    color: variables.$white;
+    color: var(--white);
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 25px;
   }
 
   p {
-    color: variables.$light-grey;
+    color: var(--light-grey);
     font-size: 14px;
     line-height: 1.3rem;
     margin-bottom: 25px;
@@ -39,39 +39,33 @@
       justify-content: center;
       align-items: center;
       padding: 0;
-      color: variables.$medium-grey;
-      background-color: variables.$light-blue;
-      outline: variables.$orange;
+      color: var(--medium-grey);
+      background-color: var(--light-blue);
+      outline: var(--orange);
       border: none;
       border-radius: 50%;
       min-width: 42px;
       max-width: 52px;
-      
+      aspect-ratio: 1 / 1;
       cursor: pointer;
 
-      // Allow to have a round button with dynamic width.
-      &::before {
-        content: '';
-        padding-top: 100%; 
-      }
-
       &:hover {
-        color: variables.$white;
-        background-color: variables.$orange;
+        color: var(--white);
+        background-color: var(--orange);
       }
     }
 
     .selected {
-      color: variables.$white;
-      background-color: variables.$light-grey;
+      color: var(--white);
+      background-color: var(--light-grey);
     }
   }
 
   button[type=submit] {
     border: none;
     border-radius: 30px;
-    color: variables.$white;
-    background-color: variables.$orange;
+    color: var(--white);
+    background-color: var(--orange);
     width: 100%;
     height: 45px;
     text-transform: uppercase;
@@ -84,8 +78,8 @@
       opacity: 1;
 
       &:hover {
-        color: variables.$orange;
-        background-color: variables.$white;
+        color: var(--orange);
+        background-color: var(--white);
       }
     }
   }

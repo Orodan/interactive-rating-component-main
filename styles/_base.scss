@@ -6,7 +6,7 @@
 
 body {
   font-family: Overpass;
-  background-color: variables.$very-dark-blue;
+  background-color: var(--very-dark-blue);
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -15,7 +15,7 @@ body {
 
 .card {
   border-radius: 30px;
-  background-color: variables.$dark-blue;
+  background-color: var(--dark-blue);
   margin: 24px;
   padding: 22px 22px 32px 22px;
   max-width: 412px;
